@@ -1,20 +1,3 @@
-Skip to content
- 
-Search or jump to…
-
-Pull requests
-Issues
-Marketplace
-Explore
- @Davia-S Sign out
-1
-0 10 uwi-info2180/info2180-lab7
- Code  Issues 0  Pull requests 0  Projects 0  Wiki  Insights
-info2180-lab7/world.sql
-3d80440  on Nov 6, 2016
-@ylynfatt ylynfatt initial files
-     
-5415 lines (5398 sloc)  243 KB
 -- MySQL dump 10.11
 --
 -- to install this database, from a terminal, type:
@@ -5429,16 +5412,3 @@ UNLOCK TABLES;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
 -- Dump completed on 2008-06-06 19:04:10
-© 2018 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-Press h to open a hovercard with more details.
