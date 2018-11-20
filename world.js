@@ -1,16 +1,24 @@
-document.getElementById('lookup').onclick = doSomething;
+var val = document.getElementById("country").value;
 
 var httpRequest = new XMLHttpRequest();
-var url = "world.php";
-
 httpRequest.onreadystatechange = doSomething;
-httpRequest.open('GET', url);
-httpRequest.send();
 
 function doSomething(){
-    if (httpRequest.readyState === XMLHttpRequest.DONE && httpRequest.status === 200)
+    if (httpRequest.readyState === 4 && httpRequest.status === 200)
     {
         var response = httpRequest.responseText;
-        $(".result").html(response);
+        document.getElementById("result").innerHTML = response;
     }
 }
+
+if (document.getElementById('allChkBox').checked)
+{
+    var url = "world.php?all=true";
+}
+else
+{
+    var url = "world.php?country="+val;
+}
+
+httpRequest.open('GET', url, true);
+httpRequest.send();
